@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <style> body { background: #101010; } </style>
+
+    <script>
+      function send() { ipc.send("openTextRequest", "text") }
+    </script>
+  </head>
+  <body>
+    <button onclick="send()">Click Me</button>
+    <p id="text" style="display: none; color: #EDE6D6;">IPC Events Processed Successfully</p>
+  </body>
+</html>
